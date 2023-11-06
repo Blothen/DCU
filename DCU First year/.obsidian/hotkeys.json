@@ -1,1 +1,8 @@
-{}
+{
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [],
+      "key": "F10"
+    }
+  ]
+}

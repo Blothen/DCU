@@ -3,31 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Add your meta description" />
-    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="description" content="A website about me, Ciaran johnson" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
-    <title>A website</title>
-    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
-	
+    <title>Ciarán Johnson Portfolio</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="css/layout.css" /> 
 </head>
 
-<!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
-include a style for these classes you should remove the class from your html file //-->
 <body>
-
-<!--REMOVE ANY CLASS OBJECT WHICH YOU DO NOT USE TO STYLE YOUR FILE//-->
-
-    <main class= "main-style">
-	 <header class="page-header">  <!-- What does the header do? Replace this comment with a brief explanation.  see nav above-->
-            <div class="header-content">  <!-- What is a div?  Replace this comment with an explanation.-->
-                <h1>Site title</h1>
-                <p>Site subtitle</p>
-            </div>
-        </header>
-	    <!-- You could style Main here if you wish-->
-        <nav class="page-nav"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+    <main class="main-style">
+        <nav> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#work">Work Experience</a></li>
@@ -35,13 +20,25 @@ include a style for these classes you should remove the class from your html fil
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
-       
-    <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+    <div id="intro" class="view">
+        <div class="mask">
+
+        </div>
+    </div>
+	 <header class="page-header">  <!-- What does the header do? Replace this comment with a brief explanation.  see nav above-->
+            <div class="header-content">  <!-- What is a div?  Replace this comment with an explanation.-->
+                <h1>Ciaran Johnson</h1>
+                <p>An Undergraduate student with a passion for all things Computing and Electronics</p>
+            </div>
+        </header>
+	    <!-- You could style Main here if you wish-->
         <section id="about" class="about-me container">  <!--What does the section do here?  Replace this comment with a brief explanation. -->
             <div class="container-content">
                 <h2>About Me</h2>
                 <div class="content">
-                    <!-- add your 150 word maximum About Me content here.  Use HTML you know, marks for the HTML.  Marks deducted for poor grammar, spelling errors etc. -->
+                    <p>
+                        I am an enthusiastic and energetic person who has a passion for anything technological, I have proven myself a valuable member of any team, with both my knowledge set and technical know how.
+                    </p>
                 </div>
             </div>
         </section>
@@ -55,28 +52,22 @@ include a style for these classes you should remove the class from your html fil
             </div>
         </section>
 				<br><br>
-
         <section id="images" class="image-gallery container">
-		
             <div class="container-content">
                 <h2>Image Gallery</h2>
                 <div class="content">
-				
-<figure class="an-image">
-  <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-     <figcaption class="image-caption"> Picture </figcaption>
-</figure>                   
-
-<figure class="an-image">
- <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-    <figcaption class="image-caption"> Picture   </figcaption>
-</figure> 
-
-<figure class="an-image">
- <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-   <figcaption class="image-caption"> Picture</figcaption>
-</figure> 
-				
+                    <figure class="an-image">
+                    <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
+                        <figcaption class="image-caption"> Picture </figcaption>
+                    </figure>                   
+                    <figure class="an-image">
+                    <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
+                        <figcaption class="image-caption"> Picture   </figcaption>
+                    </figure> 
+                    <figure class="an-image">
+                    <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
+                    <figcaption class="image-caption"> Picture</figcaption>
+                    </figure> 
                 </div>
             </div>
         </section>

@@ -1,35 +1,65 @@
-/* These are some suggested groupings for your stylesheet... */
+body {
+  background-color: darkgray;
+  color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-line: line-through;
+}
+
+.about {
+  color: black;
+  text-align: left;
+  vertical-align: auto;
+}
+
+.main-style {
+    text-align: center;
+}
+
+.header-content {
+  text-emphasis: bold;
+  text-shadow: #333;
+  
+}
 
 
-/* box sizing */
+html, body, header, #intro {
+  height: 100%;
+}
 
+#intro {
+  background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-/* element styling (e.g. standard p, h1, h2, a, etc) */
-
-
-/* flexible content images code */
-
-
-/* navigation styles */
-
-
-/* page header styles*/
-
-
-/* main layout */
-
-
-
-
-/* styling for the section content */
-
-
-/* background colours for sections */
-
-
-/* form styling */
-
-
-/* footer styling */
-
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 25px;
+    padding: 20px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
