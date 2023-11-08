@@ -2,33 +2,36 @@
 <html lang="en-gb">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="A website about me, Ciaran johnson" />
+    <meta name="description" content="A website about me, Ciaran johnson"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ciarán Johnson Portfolio</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-	<link rel="stylesheet" href="css/layout.css" /> 
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="css/layout.css"/> 
     <script>
-        const scrollingContainer = document.querySelector('.scrolling-container');
-        const itemWidth = 320;
-        const scrollSpeed = 3000;
-        function scrollImages() {
-            const firstItem = scrollingContainer.firstElementChild;
-            scrollingContainer.appendChild(firstItem);
-        }
-        const scrollInterval = setInterval(scrollImages, scrollSpeed);
-    
-        scrollingContainer.addEventListener('mouseover', () => {
-            clearInterval(scrollInterval);
+        document.addEventListener("DOMContentLoaded", function () {
+          const links = document.querySelectorAll(".fixed-nav a");
+      
+          links.forEach(function (link) {
+            link.addEventListener("click", function (e) {
+              e.preventDefault();
+              const targetId = this.getAttribute("href").substring(1);
+              const targetElement = document.getElementById(targetId);
+      
+              if (targetElement) {
+                window.scrollTo({
+                  top: targetElement.offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            });
+          });
         });
-        scrollingContainer.addEventListener('mouseout', () => {
-            scrollInterval = setInterval(scrollImages, scrollSpeed);
-        });
-        </script> 
+      </script>      
 </head>
 <body>
     <main class="main-style">
-        <nav> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+        <nav class="fixed-nav"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#work">Work Experience</a></li>
@@ -98,20 +101,20 @@
                     method="POST">
                     <p>
                         <label for="contact-name">Your Name</label>
-                        <input id="contact-name" type="text" name="contact-name" />
+                        <input id="contact-name" type="text" name="contact-name"/>
                     </p>
                     <p>
                         <label for="contact-email">Your email address</label>
-                        <input id="contact-email" type="email" name="contact-email" /> </p>
+                        <input id="contact-email" type="email" name="contact-email"/> </p>
                     <p>
                         <label for="contact-phone">Your phone number</label>
-                        <input id="contact-phone" type="tel" name="contact-phone" /> </p>
+                        <input id="contact-phone" type="tel" name="contact-phone"/> </p>
                     <p>
                         <label for="contact-message">Your message</label>
                         <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
                     </p>
                     <p>
-                        <input type="submit" value="send my message" /> </p>
+                        <input type="submit" value="send my message"/> </p>
                     </form>
                 </div>
             </div>
