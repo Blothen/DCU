@@ -1,11 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   background-color: darkgray;
   color: whitesmoke;
 }
 
 a {
   text-decoration: none;
-  text-decoration-line: line-through;
+  text-decoration-line: line-throughz;
 }
 
 .about {
@@ -24,6 +32,11 @@ a {
   
 }
 
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
 
 html, body, header, #intro {
   height: 100%;
@@ -63,3 +76,36 @@ ul {
   li a:hover {
     background-color: #111;
   }
+
+
+/* Section styles */
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Portfolio item styles */
+.portfolio-item {
+  margin: 20px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Form styles */
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label, input, textarea {
+  display: block;
+  margin: 10px 0;
+}
