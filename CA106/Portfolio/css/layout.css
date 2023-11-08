@@ -8,8 +8,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: #111;
   color: #fff;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -23,77 +21,64 @@ a {
   z-index: 1;
 }
 
-#intro {
-  background-image: url('../images/bg-masthead.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #fff;
-  text-align: center;
-  padding: 100px;
-}
-
-/* Style the header background */
 .img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/images/bg-masthead.jpg'); /* Replace with your image path */
+  background-image: url('/images/bg-masthead.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 0.6; /* Adjust the opacity as needed */
+  opacity: 0.6;
 }
 
 .image-gallery {
-  width: 100%; /* Set the width of the gallery */
-  overflow: hidden; /* Hide the overflow of the gallery */
-  white-space: nowrap; /* Prevent images from wrapping to the next line */
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-/* Container for scrolling the images horizontally */
 .scrolling-container {
-  display: inline-block; /* Make the container inline to enable horizontal scrolling */
-  white-space: nowrap; /* Prevent images from wrapping to the next line */
-  overflow-x: auto; /* Enable horizontal scrolling when necessary */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+  display: inline-block;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Style for individual images */
 .scrolling-container img {
-  width: 300px; /* Set the width of each image */
-  height: auto; /* Maintain the aspect ratio */
-  margin-right: 10px; /* Add spacing between images (optional) */
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
 }
 
-/* Style for individual images */
 .scrolling-container figure {
-  display: inline-block; /* Make the figure elements inline-block for horizontal layout */
-  margin-right: 10px; /* Add spacing between images and captions (optional) */
-  text-align: center; /* Center the content within the figures */
-  vertical-align: top; /* Align figures to the top of the container */
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: top;
 }
 
-/* Style for images within figure elements */
 .scrolling-container img {
-  width: 300px; /* Set the width of each image */
-  height: auto; /* Maintain the aspect ratio */
+  width: 300px;
+  height: auto;
 }
 
-/* Style for captions within figure elements */
 .scrolling-container figcaption {
-  display: block; /* Display captions as block-level elements (under images) */
-  text-align: center; /* Center the captions */
-  margin-top: 10px; /* Add space between the image and caption */
+  display: block;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .image-caption {
-  display: inline-block; /* Display image-caption pairs inline for horizontal layout */
-  margin-right: 20px; /* Add spacing between image-caption pairs (optional) */
+  display: inline-block;
+  margin-right: 20px;
   text-align: center;
 }
 
 .image-caption figcaption {
-  margin-top: 10px; /* Add space between the image and caption */
+  margin-top: 10px;
 }
 
 .fixed-nav {
@@ -125,161 +110,15 @@ a {
   background-color: #555;
 }
 
-/* Center and limit section width */
 section {
-  margin: 20px auto; /* Center the sections horizontally */
+  margin: 20px auto;
   padding: 20px;
-  max-width: 800px; /* Adjust the maximum width as needed */
+  max-width: 800px;
   background-color: #333;
   border-radius: 5px;
 }
 
 h2 {
   color: #fff;
-  text-align: center; /* Center the heading text */
-}
-
-/* Style for the "Work Experience" section */
-.work-experience {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.work-experience h2 {
-  font-size: 24px;
   text-align: center;
 }
-
-.work-experience .content {
-  margin-top: 20px;
-}
-
-.work-experience ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.work-experience li {
-  margin-bottom: 20px;
-}
-
-.work-experience li strong {
-  font-weight: bold;
-}
-
-.work-experience li span {
-  font-style: italic;
-}
-
-
-/* Portfolio item styles */
-.portfolio-item {
-  margin: 20px 0;
-  text-align: center;
-}
-
-img {
-  max-width: 100%;
-}
-
-/* Form container styles */
-form {
-  width: 80%; /* Adjust the width as needed */
-  max-width: 500px; /* Set a maximum width for the form */
-  margin: 0 auto;
-  background-color: #333;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Label styles */
-label {
-  display: block;
-  margin-bottom: 8px;
-  color: #fff;
-}
-
-/* Input and textarea styles */
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #666;
-  border-radius: 5px;
-  background-color: #444;
-  color: #fff;
-}
-
-/* Style the submit button */
-input[type="submit"] {
-  background-color: #555;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-input[type="submit"]:hover {
-  background-color: #333;
-}
-
-/* Additional styles for text inside the textarea */
-textarea {
-  resize: vertical; /* Allow vertical resizing of the textarea */
-  min-height: 100px; /* Set a minimum height */
-}
-
-
-.header-content {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.about {
-  text-align: center;
-}
-
-/* Add a subtle box shadow to sections */
-section {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Style the footer */
-#footer-layout {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Style the links in the footer */
-#footer-layout a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-/* Style the separators between footer elements */
-.footer-separator {
-  color: #fff;
-}
-
-/* Style the footer text */
-.footer-text {
-  font-size: 14px;
-}
-
-/* Center the footer text */
-.footer-text.centered {
-  text-align: center;
-}
-
