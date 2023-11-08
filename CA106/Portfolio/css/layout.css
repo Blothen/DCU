@@ -6,107 +6,244 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  background-color: darkgray;
-  color: whitesmoke;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
-  text-decoration-line: line-throughz;
 }
 
-.about {
-  color: black;
-  text-align: left;
-  vertical-align: auto;
-}
-
-.main-style {
-    text-align: center;
-}
-
-.header-content {
-  text-emphasis: bold;
-  text-shadow: #333;
-  
-}
-
-header {
+.header {
   background-color: #333;
   color: #fff;
   padding: 10px;
 }
 
-html, body, header, #intro {
-  height: 100%;
+#intro {
+  background-image: url('../images/bg-masthead.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  padding: 100px;
 }
 
-#intro {
-  font-family: Arial, sans-serif;
-    background-image: url(/images/bg-masthead.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
+/* Style the header background */
+.img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/bg-masthead.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.6; /* Adjust the opacity as needed */
+}
+
+.image-gallery {
+  width: 100%; /* Set the width of the gallery */
+  overflow: hidden; /* Hide the overflow of the gallery */
+  white-space: nowrap; /* Prevent images from wrapping to the next line */
+}
+
+/* Container for scrolling the images horizontally */
+.scrolling-container {
+  display: inline-block; /* Make the container inline to enable horizontal scrolling */
+  white-space: nowrap; /* Prevent images from wrapping to the next line */
+  overflow-x: auto; /* Enable horizontal scrolling when necessary */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+}
+
+/* Style for individual images */
+.scrolling-container img {
+  width: 300px; /* Set the width of each image */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 10px; /* Add spacing between images (optional) */
+}
+
+/* Style for individual images */
+.scrolling-container figure {
+  display: inline-block; /* Make the figure elements inline-block for horizontal layout */
+  margin-right: 10px; /* Add spacing between images and captions (optional) */
+  text-align: center; /* Center the content within the figures */
+  vertical-align: top; /* Align figures to the top of the container */
+}
+
+/* Style for images within figure elements */
+.scrolling-container img {
+  width: 300px; /* Set the width of each image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Style for captions within figure elements */
+.scrolling-container figcaption {
+  display: block; /* Display captions as block-level elements (under images) */
+  text-align: center; /* Center the captions */
+  margin-top: 10px; /* Add space between the image and caption */
+}
+
+.image-caption {
+  display: inline-block; /* Display image-caption pairs inline for horizontal layout */
+  margin-right: 20px; /* Add spacing between image-caption pairs (optional) */
+  text-align: center;
+}
+
+.image-caption figcaption {
+  margin-top: 10px; /* Add space between the image and caption */
+}
+
+nav {
+  background-color: #333;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    border-radius: 25px;
-    padding: 20px;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
+li {
+  float: left;
+}
 
-/* Section styles */
+li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  background-color: #555;
+}
+
+/* Center and limit section width */
 section {
-  margin: 20px;
+  margin: 20px auto; /* Center the sections horizontally */
   padding: 20px;
-  background-color: #fff;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  background-color: #333;
   border-radius: 5px;
 }
 
 h2 {
-  color: #333;
+  color: #fff;
+  text-align: center; /* Center the heading text */
 }
 
 /* Portfolio item styles */
 .portfolio-item {
   margin: 20px 0;
+  text-align: center;
 }
 
 img {
   max-width: 100%;
 }
 
-/* Form styles */
+/* Form container styles */
 form {
-  width: 50%;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 500px; /* Set a maximum width for the form */
   margin: 0 auto;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-label, input, textarea {
+/* Label styles */
+label {
   display: block;
-  margin: 10px 0;
+  margin-bottom: 8px;
+  color: #fff;
 }
+
+/* Input and textarea styles */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Additional styles for text inside the textarea */
+textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+  min-height: 100px; /* Set a minimum height */
+}
+
+
+.header-content {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about {
+  text-align: center;
+}
+
+/* Add a subtle box shadow to sections */
+section {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the footer */
+#footer-layout {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the links in the footer */
+#footer-layout a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Style the separators between footer elements */
+.footer-separator {
+  color: #fff;
+}
+
+/* Style the footer text */
+.footer-text {
+  font-size: 14px;
+}
+
+/* Center the footer text */
+.footer-text.centered {
+  text-align: center;
+}
+

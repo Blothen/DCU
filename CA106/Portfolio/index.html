@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="A website about me, Ciaran johnson" />
@@ -9,8 +8,24 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 	<link rel="stylesheet" href="css/layout.css" /> 
+    <script>
+        const scrollingContainer = document.querySelector('.scrolling-container');
+        const itemWidth = 320;
+        const scrollSpeed = 3000;
+        function scrollImages() {
+            const firstItem = scrollingContainer.firstElementChild;
+            scrollingContainer.appendChild(firstItem);
+        }
+        const scrollInterval = setInterval(scrollImages, scrollSpeed);
+    
+        scrollingContainer.addEventListener('mouseover', () => {
+            clearInterval(scrollInterval);
+        });
+        scrollingContainer.addEventListener('mouseout', () => {
+            scrollInterval = setInterval(scrollImages, scrollSpeed);
+        });
+        </script> 
 </head>
-
 <body>
     <main class="main-style">
         <nav> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
@@ -27,6 +42,7 @@
         </div>
     </div>
 	 <header class="page-header">  <!-- What does the header do? Replace this comment with a brief explanation.  see nav above-->
+        <div class="img-container"></div>
             <div class="header-content">  <!-- What is a div?  Replace this comment with an explanation.-->
                 <h1>Ciaran Johnson</h1>
                 <p>An Undergraduate student with a passion for all things Computing and Electronics</p>
@@ -57,18 +73,18 @@
         <section id="images" class="image-gallery container">
             <div class="container-content">
                 <h2>Image Gallery</h2>
-                <div class="content">
+                <div class="scrolling-container">
                     <figure class="an-image">
-                    <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
+                        <img src="images/bg-scroll-1.jpg" alt="A picture of a PCB soldered to a few cables.">
                         <figcaption class="image-caption"> Picture </figcaption>
                     </figure>                   
                     <figure class="an-image">
-                    <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
+                        <img src="images/bg-scroll-2.jpg" alt="A picture of a Sony camera with a few lenses beside it.">
                         <figcaption class="image-caption"> Picture   </figcaption>
                     </figure> 
                     <figure class="an-image">
-                    <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
-                    <figcaption class="image-caption"> Picture</figcaption>
+                        <img src="images/bg-scroll-3.jpg" alt="A picture of a monitor with lines of Javascript on it.">
+                        <figcaption class="image-caption"> Picture</figcaption>
                     </figure> 
                 </div>
             </div>
@@ -109,7 +125,8 @@
 				<span class="footer-separator">&middot;</span>
 				<span class="footer-text">Lecturer<a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> 
 				<span class="footer-separator">&middot;</span> 
-				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
+				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a></span>
+                <span class="footer-text">All images are courtesy of <a href="https://unsplash.com">Unsplash</a></span>
 			</p>
         <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
          
