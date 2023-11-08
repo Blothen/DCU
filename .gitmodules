@@ -4,3 +4,6 @@
 [submodule "CA106/CA106/Group Project"]
 	path = CA106/CA106/Group Project
 	url = https://github.com/Blothen/CA106-Group-Project.git
+[submodule "CA106/GroupProject"]
+	path = CA106/GroupProject
+	url = https://github.com/Blothen/CA106-Group-Project.git
